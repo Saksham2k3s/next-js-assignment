@@ -1,5 +1,6 @@
 import React from 'react';
 import { Product } from '@/types/ApiResponse';
+import Image from 'next/image';
 
 
 interface ProductCardProps {
@@ -13,7 +14,7 @@ function ProductCard({ productDetail }: ProductCardProps) {
     <>
       <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transition-transform transform hover:scale-105 duration-300 self-center ">
         <a href="#">
-          <img
+          <Image
             className="p-6 rounded-t-lg w-full object-cover h-64"
             src={thumbnail}
             alt="product-image"
